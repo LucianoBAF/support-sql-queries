@@ -32,11 +32,12 @@ Example:
 SELECT clients.client_code, clients.client_name,  SUM(orders.amount)
 FROM clients
 JOIN orders ON orders.client_code = clients.client_code
-GROUP  BY clients.client_code, clients.client_name
-ORDER  BY clients.client_code;
+GROUP BY clients.client_code, clients.client_name
+ORDER BY clients.client_code;
 ```
 
 **Important**
+- When creating a new file, use a brief and descriptive naming. Ex: _get-total-user-points.sql_
 - Remember to review the whole query to remove any credentials
 - Preferentially use variables to get the credentials dynamically
 - Try to use the same formatting as used in the example, by breaking each statement in different lines
